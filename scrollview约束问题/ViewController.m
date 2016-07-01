@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentviewWidthConstraint;
 
 @end
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _contentviewWidthConstraint.constant = 1000;
 }
 
 - (void)didReceiveMemoryWarning {
